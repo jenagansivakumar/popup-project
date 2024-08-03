@@ -1,1 +1,29 @@
-<p></p>
+<h2 mat-dialog-title>Add Project</h2>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Project Base Catalog Number</mat-label>
+    <input matInput [(ngModel)]="projectCatalogNumber">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Artist</mat-label>
+    <input matInput [(ngModel)]="artist">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Project Title</mat-label>
+    <input matInput [(ngModel)]="projectTitle">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Label</mat-label>
+    <mat-select [(ngModel)]="label">
+      <mat-option *ngFor="let label of labels" [value]="label">{{ label }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-button-toggle-group [(ngModel)]="albumType">
+    <mat-button-toggle value="Original Material">Original Material</mat-button-toggle>
+    <mat-button-toggle value="Compilation">Compilation</mat-button-toggle>
+  </mat-button-toggle-group>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button [disabled]="!formValid()" (click)="onAddProject()">Add Project</button>
+</div>
