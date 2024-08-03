@@ -2,11 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-add-project-popup',
-  standalone: true,
-  imports: [],
   templateUrl: './add-project-popup.component.html',
-  styleUrl: './add-project-popup.component.css'
+  styleUrls: ['./add-project-popup.component.css'],
+  standalone: true,
 })
-export class AddProjectPopupComponent {
-
-}
+export class AddProjectPopupComponent {}
