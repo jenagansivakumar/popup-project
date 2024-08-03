@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AddProjectPopupComponent } from '../add-project-popup/add-project-popup.component';
 
 @Component({
   selector: 'app-main',
@@ -6,4 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.component.css'],
   standalone: true,
 })
-export class MainComponent {}
+export class MainComponent {
+  constructor(public dialog: MatDialog) {}
+
+  openDialog(): void {
+    this.dialog.open(AddProjectPopupComponent, {
+      width: '400px',
+    });
+  }
+}
