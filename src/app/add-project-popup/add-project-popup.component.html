@@ -1,32 +1,3 @@
-<h2 mat-dialog-title>Create new project</h2>
-<div mat-dialog-content>
-  <mat-form-field appearance="fill">
-    <mat-label>Project Base Catalog Number</mat-label>
-    <input matInput [(ngModel)]="projectCatalogNumber" required>
-    <mat-error *ngIf="!projectCatalogNumber">A project catalog number is required</mat-error>
-  </mat-form-field>
-  <mat-form-field appearance="fill">
-    <mat-label>Artist</mat-label>
-    <input matInput [(ngModel)]="artist" required>
-    <mat-error *ngIf="!artist">Artist name is required</mat-error>
-  </mat-form-field>
-  <mat-form-field appearance="fill">
-    <mat-label>Project Title</mat-label>
-    <input matInput [(ngModel)]="projectTitle" required>
-    <mat-error *ngIf="!projectTitle">Project title is required</mat-error>
-  </mat-form-field>
-  <mat-form-field appearance="fill">
-    <mat-label>Label</mat-label>
-    <mat-select [(ngModel)]="label" required>
-      <mat-option *ngFor="let label of labels" [value]="label">{{ label }}</mat-option>
-    </mat-select>
-  </mat-form-field>
-  <mat-button-toggle-group [(ngModel)]="albumType">
-    <mat-button-toggle value="Original Material">Original Pirate Material</mat-button-toggle>
-    <mat-button-toggle value="Compilation">Compilation</mat-button-toggle>
-  </mat-button-toggle-group>
-</div>
-<div mat-dialog-actions>
-  <button mat-button (click)="onCancel()">Cancel</button>
-  <button mat-button [disabled]="!formValid()" (click)="onAddProject()">Add Project</button>
-</div>
+<h2> Create New Project</h2>
+<div mat-dialog-content></div>
+<div mat-dialog-actions ></div>
