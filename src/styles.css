@@ -1,4 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Set the background color of the entire dialog to white */
+.custom-dialog-container .mat-dialog-container {
+    background-color: white !important;
+    color: black !important;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  /* Ensure the mat-dialog-title and mat-dialog-content are styled correctly */
+  .custom-dialog-container .mat-dialog-title, 
+  .custom-dialog-container .mat-dialog-content {
+    background-color: white !important;
+    color: black !important;
+  }
+  
+  /* Style for the form fields */
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  
+  /* Style for mat-error messages */
+  mat-error {
+    color: red;
+  }
+  

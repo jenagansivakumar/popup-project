@@ -14,6 +14,7 @@ export class MainComponent {
   openDialog(): void {
     this.dialog.open(AddProjectPopupComponent, {
       width: '400px',
+      panelClass: 'custom-dialog-container'
     });
   }
 }

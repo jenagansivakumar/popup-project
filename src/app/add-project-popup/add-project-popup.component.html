@@ -1,8 +1,14 @@
-<h2> Create New Project</h2>
+<h5> Create New Project</h5>
 <div mat-dialog-content>
     <mat-form-field appearance="fill">
       <mat-label>Project Base Catalog Number</mat-label>
       <input matInput [(ngModel)] = "projectCatalogNumber" required>
+      <mat-error *ngIf="!projectCatalogNumber"> A Project Catalogue Number Is Required</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Project Base Catalog Number</mat-label>
+      <input matInput [(ngModel)] = "projectCatalogNumber" required>
+      <mat-error *ngIf="!projectCatalogNumber"> A Project Catalogue Number Is Required</mat-error>
     </mat-form-field>
   </div>
 <div mat-dialog-actions></div>
