@@ -1,17 +1,62 @@
-mat-dialog-content {
-    background-color: white !important;
-    padding: 16px; 
-  }
-  
-  mat-dialog-title {
-    background-color: white !important;
-    color: black !important; 
-    padding: 16px; 
-  }
-  
-  .custom-dialog-container {
-    background-color: white !important;
-    color: black !important; 
-    padding: 16px; 
-  }
-  
+.custom-dialog-title {
+    background-color: #3b3b3b; /* Adjust to your desired color */
+    color: white;
+    padding: 16px 24px;
+    font-size: 24px;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.custom-dialog-content {
+    background-color: white;
+    padding: 24px;
+}
+
+.custom-form-field {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.custom-dialog-actions {
+    padding: 8px 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3b3b3b; /* Adjust to match the top section */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.custom-button {
+    color: #ff69b4;
+    font-weight: bold;
+}
+
+.custom-button.cancel-button {
+    color: #ff69b4;
+}
+
+.custom-button.add-button {
+    color: #ff69b4;
+}
+
+.custom-button[disabled] {
+    color: rgba(255, 105, 180, 0.3);
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #3b3b3b; /* Match the form field background color */
+    border-radius: 4px;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-label {
+    color: #ff69b4;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-underline {
+    display: none;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-subscript-wrapper {
+    color: #ff69b4;
+}

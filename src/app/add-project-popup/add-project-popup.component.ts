@@ -4,15 +4,16 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
-import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-add-project-popup',
   templateUrl: './add-project-popup.component.html',
   styleUrls: ['./add-project-popup.component.css'],
   standalone: true,
+  encapsulation: ViewEncapsulation.None,
   imports: [
     CommonModule,
     MatDialogModule,
@@ -20,7 +21,6 @@ import { FormsModule } from '@angular/forms';
     MatInputModule,
     MatSelectModule,
     MatButtonModule,
-    MatButtonToggleModule,
     FormsModule
   ]
 })
@@ -30,7 +30,7 @@ export class AddProjectPopupComponent {
   projectTitle: string = '';
   label: string = '';
   albumType: string = '';
-  labels: string[] = ['Label1', 'Label2', 'Label3', 'Label4', 'Label5'];
+  labels: string = "";
 
   onCancel(): void {
     // Logic for cancel button
