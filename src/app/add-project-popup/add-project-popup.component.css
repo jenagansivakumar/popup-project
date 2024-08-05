@@ -1,20 +1,17 @@
-/* Set the background color of the dialog content to white */
 mat-dialog-content {
     background-color: white !important;
-    padding: 16px; /* Optional: Add some padding for better layout */
+    padding: 16px; 
   }
   
-  /* Set the dialog title background color to white */
   mat-dialog-title {
     background-color: white !important;
-    color: black !important; /* Set text color to black */
-    padding: 16px; /* Optional: Add some padding for better layout */
+    color: black !important; 
+    padding: 16px; 
   }
   
-  /* Ensure the entire dialog background is white */
   .custom-dialog-container {
     background-color: white !important;
-    color: black !important; /* Set text color to black */
-    padding: 16px; /* Optional: Add some padding for better layout */
+    color: black !important; 
+    padding: 16px; 
   }
   
