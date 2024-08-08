@@ -33,11 +33,9 @@ export class AddProjectPopupComponent {
   labels: string = "";
 
   onCancel(): void {
-    // Logic for cancel button
   }
 
   onAddProject(): void {
-    // Logic for add project button
   }
 
   formValid(): boolean {
