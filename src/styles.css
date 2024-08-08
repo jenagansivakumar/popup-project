@@ -24,3 +24,5 @@ Set the background color of the entire dialog to white
     color: red;
   }
   
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
