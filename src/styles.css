@@ -1,4 +1,4 @@
-/* Set the background color of the entire dialog to white */
+Set the background color of the entire dialog to white
 .custom-dialog-container .mat-dialog-container {
     background-color: white !important;
     color: black !important;
