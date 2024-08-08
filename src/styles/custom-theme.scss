@@ -1,12 +1,9 @@
-// src/styles/custom-theme.scss
 
 @import '~@angular/material/theming';
 
-// Define your primary and accent color palettes
 $primary: mat-palette($mat-blue-grey);
 $accent: mat-palette($mat-pink);
 
-// Define your theme using the color palettes
 $theme: mat-light-theme(
   (
     color: (
@@ -20,11 +17,9 @@ $theme: mat-light-theme(
   )
 );
 
-// Include the Angular Material core styles and your theme styles
 @include mat-core();
 @include angular-material-theme($theme);
 
-// Custom styles to match the screenshot
 .mat-form-field-label {
   color: $primary !important;
 }
