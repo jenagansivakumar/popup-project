@@ -1,0 +1,53 @@
+// src/styles/custom-theme.scss
+
+@import '~@angular/material/theming';
+
+// Define your primary and accent color palettes
+$primary: mat-palette($mat-blue-grey);
+$accent: mat-palette($mat-pink);
+
+// Define your theme using the color palettes
+$theme: mat-light-theme(
+  (
+    color: (
+      primary: $primary,
+      accent: $accent,
+      warn: mat-palette($mat-red),
+    ),
+    typography: mat-typography-config(
+      $font-family: 'Roboto, sans-serif',
+    ),
+  )
+);
+
+// Include the Angular Material core styles and your theme styles
+@include mat-core();
+@include angular-material-theme($theme);
+
+// Custom styles to match the screenshot
+.mat-form-field-label {
+  color: $primary !important;
+}
+
+.mat-input-element {
+  color: $primary !important;
+}
+
+.mat-error {
+  color: mat-color($warn) !important;
+}
+
+.mat-raised-button, .mat-stroked-button {
+  background-color: mat-color($primary) !important;
+  color: white !important;
+}
+
+.mat-raised-button[disabled], .mat-stroked-button[disabled] {
+  background-color: mat-color($primary, 100) !important;
+  color: mat-color($primary, 500, 0.38) !important;
+}
+
+.mat-button-toggle-checked {
+  background-color: mat-color($accent) !important;
+  color: white !important;
+}
